@@ -4,12 +4,15 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
       # bravekarma
-    - name: caksoylar
-      url-base: https://github.com/caksoylar
+    - name: urchin
+      url-base: https://github.com/antrodroid
   projects:
     - name: zmk
-      remote: zmkfirmware
+      remote: urchin
       revision: main
       import: app/west.yml
+    - name: zmk-helpers
+      remote: urchin
+      revision: v2
   self:
     path: config
