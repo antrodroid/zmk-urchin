@@ -41,6 +41,35 @@
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
         };
+
+        o_oe: tap_dance_oe {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp O>, <&kp SEMI>;
+        };
+    
+        a_ae: tap_dance_ae {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp A>, <&kp SQT>;
+        };
+    
+        u_ue: tap_dance_ue {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp U>, <&kp LBKT>;
+        };
+    
+        z_sz: tap_dance_sz {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp Y>, <&kp MINUS>;
+        };
+
     };
 
     macros {
