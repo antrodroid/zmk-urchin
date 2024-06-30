@@ -45,14 +45,14 @@
         o_oe: tap_dance_oe {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <175>;
             bindings = <&kp O>, <&kp SEMI>;
         };
 
         a_ae: tap_dance_ae {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <275>;
+            tapping-term-ms = <300>;
             bindings = <&kp A>, <&kp SQT>;
         };
 
@@ -92,21 +92,21 @@
 
         left_eckig_klammer {
             key-positions = <3 4>;
-            bindings = <&kp LEFT_BRACKET>;
+            bindings = <&kp LBKT>;
         };
 
         right_eckig_klammer {
-            bindings = <&kp RIGHT_BRACKET>;
+            bindings = <&kp RBKT>;
             key-positions = <5 6>;
         };
 
         left_rund_klammer {
-            bindings = <&kp LEFT_PARENTHESIS>;
+            bindings = <&kp LPAR>;
             key-positions = <23 24>;
         };
 
         right_rund_klammer {
-            bindings = <&kp RIGHT_PARENTHESIS>;
+            bindings = <&kp RPAR>;
             key-positions = <26 25>;
         };
 
@@ -125,19 +125,29 @@
             key-positions = <0 1>;
         };
 
-        fragezeichen {
+        underscore {
             bindings = <&kp QUESTION>;
             key-positions = <28 29>;
         };
 
         windows {
             bindings = <&kp LEFT_WIN>;
-            key-positions = <20 10>;
+            key-positions = <20 21>;
         };
 
         escape {
             bindings = <&kp ESCAPE>;
-            key-positions = <10 0>;
+            key-positions = <10 11>;
+        };
+
+        numberlayer {
+            bindings = <&mo 4>;
+            key-positions = <30 31>;
+        };
+
+        questionmark {
+            bindings = <&kp QMARK>;
+            key-positions = <1 2>;
         };
 
         // left index & middle fingers (home-row)
@@ -195,6 +205,15 @@
 &none        &none  &none  &none       &bt BT_SEL 1    &bt BT_SEL 4  &none  &none  &none  &none
 &none        &none  &none  &none       &bt BT_SEL 2    &bt BT_SEL 5  &none  &none  &none  &none
 &none        &none                                                                 &none  &none
+            >;
+        };
+
+        numbers {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &kp N0     &kp N7        &kp N8        &kp N9        &trans
+&trans  &trans  &trans  &trans  &trans    &kp PLUS   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_DIVIDE
+&trans  &trans  &trans  &trans  &trans    &kp MINUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK
+&trans  &trans                                                                   &trans        &trans
             >;
         };
     };
