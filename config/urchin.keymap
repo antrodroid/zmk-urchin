@@ -142,12 +142,37 @@
 
         numberlayer {
             bindings = <&mo 4>;
-            key-positions = <30 31>;
+            key-positions = <31 32>;
         };
 
         questionmark {
             bindings = <&kp QMARK>;
             key-positions = <1 2>;
+        };
+
+        at_sign {
+            bindings = <&kp AT_SIGN>;
+            key-positions = <4 5>;
+        };
+
+        hashtag {
+            bindings = <&kp HASH>;
+            key-positions = <3 6>;
+        };
+
+        percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <2 7>;
+        };
+
+        pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <23 26>;
+        };
+
+        quotation {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <24 25>;
         };
 
         // left index & middle fingers (home-row)
@@ -210,10 +235,10 @@
 
         numbers {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &kp N0     &kp N7        &kp N8        &kp N9        &trans
-&trans  &trans  &trans  &trans  &trans    &kp PLUS   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_DIVIDE
-&trans  &trans  &trans  &trans  &trans    &kp MINUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK
-&trans  &trans                                                                   &trans        &trans
+&kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &kp N0     &kp N7        &kp N8        &kp N9        &trans
+&kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &kp PLUS   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_DIVIDE
+&kp F11  &kp F12  &trans  &trans  &trans     &kp MINUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK
+&trans   &trans                                                                     &trans        &trans
             >;
         };
     };
