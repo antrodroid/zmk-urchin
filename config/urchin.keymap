@@ -7,7 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h> //send over USB or BLE switching
+#include <dt-bindings/zmk/outputs.h>
 
 // Layer definitions
 
@@ -227,19 +227,19 @@
         settings_layer {
             label = "Sett.";
             bindings = <
-&bootloader  &none  &none  &bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 3  &none  &none  &none  &bootloader
-&none        &none  &none  &out OUT_USB       &bt BT_SEL 1    &bt BT_SEL 4  &none  &none  &none  &none
-&none        &none  &none  &out OUT_USB       &bt BT_SEL 2    &bt BT_SEL 5  &none  &none  &none  &none
-&none        &none                                                                 &none  &none
+&bootloader  &none  &none  &bt BT_CLR    &bt BT_SEL 0    &bt BT_SEL 3  &none  &none  &none  &bootloader
+&none        &none  &none  &out OUT_USB  &bt BT_SEL 1    &bt BT_SEL 4  &none  &none  &none  &none
+&none        &none  &none  &out OUT_USB  &bt BT_SEL 2    &bt BT_SEL 5  &none  &none  &none  &none
+&none        &none                                                                   &none  &none
             >;
         };
 
         numbers {
             bindings = <
-&kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &kp N0     &kp N7        &kp N8        &kp N9        &trans
-&kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &kp PLUS   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_DIVIDE
-&kp F11  &kp F12  &trans  &trans  &trans     &kp MINUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK
-&trans   &trans                                                                     &trans        &trans
+&kp F1   &kp F2   &kp F3      &kp F4             &kp F5             &kp N0     &kp N7        &kp N8        &kp N9        &trans
+&kp F6   &kp F7   &kp F8      &kp F9             &kp F10            &kp PLUS   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_DIVIDE
+&kp F11  &kp F12  &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp MINUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK
+&trans   &trans                                                                                            &trans        &trans
             >;
         };
     };
