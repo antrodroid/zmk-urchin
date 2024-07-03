@@ -93,7 +93,7 @@
 
         left_eckig_klammer {
             key-positions = <3 4>;
-            bindings = <&kp RA(LBKT)>;
+            bindings = <&kp RA(N8)>;
         };
 
         right_eckig_klammer {
